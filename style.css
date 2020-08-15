@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("overlay2.png"), url("overlay4.svg"), linear-gradient(12deg, #223880, #4e5554 50%, #659c22 85%);
+    background-size: auto, cover, cover;
+}
+header {
+    background-color: white;
+    padding: 2rem 20rem;
+    text-align: center;
+}
+.calculator {
+    background-color:#2B4259;
+    margin: 10% 40%;
+    padding: 1% 1%;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 1179px){
+    .calculator {
+        background-color:#2B4259;
+        margin: 10% 15%;
+        padding: 1% 1%;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 1566px) {
+    .display {
+        padding-right: 50%;
+    }
+    .calculator-top {
+        padding-bottom: 2rem;
+        margin-right: -2000%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .calculator-top {
+        padding-bottom: 2rem;
+        margin-right: -2000%;
+    }
+}
+.calculator-top {
+    padding-bottom: 2rem;
+    margin-right: 60%;
+}
+.display {
+    background-color: #B1D6CF;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10%;
+    padding-right: 4%;
+}
+
+.grid-button {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0% 1%;
+}
+div > button {
+    border: 1px solid #668097;
+    color: black;
+    background-color: #DCE4EB;
+    border-radius: 10px ;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    display: inline-block;
+    padding: 10% 10% ;
+    margin: 1% 2%;
+}
+button:hover{
+    cursor: pointer;
+}
+.item17 {
+    grid-column: 1/ span 2;
+  }
+.item16 {
+    grid-column-start: 4;  /* start at column 4 and go down to 5 then start at row 4 and down to 6 tha's
+    how we can move indivitual item in a grid */
+    grid-column-end: 5;     
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: #F6A762;
+    border: 2px #F6A762 solid ;
+}
